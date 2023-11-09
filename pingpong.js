@@ -98,11 +98,6 @@ class Paddle {
     this.y += dir * 5;
     this.y = constrain(this.y, this.height / 2, height - this.height / 2);
   }
-
-  followBall(ball) {
-    let targetY = ball.y;
-    this.y = lerp(this.y, targetY, 0.1);
-  }
 }
 
 class Ball {
@@ -110,7 +105,7 @@ class Ball {
     this.x = width / 2;
     this.y = height / 2;
     this.radius = 15;
-    this.xSpeed = 15;
+    this.xSpeed = 10;
     this.ySpeed = 5;
   }
 
@@ -132,7 +127,7 @@ class Ball {
   reset() {
     this.x = width / 2;
     this.y = height / 2;
-    this.xSpeed = 5;
+    this.xSpeed = 10;
     this.ySpeed = 5;
   }
 
