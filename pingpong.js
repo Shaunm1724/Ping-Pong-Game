@@ -125,7 +125,7 @@ class Ball {
   reset() {
     this.x = width / 2;
     this.y = height / 2;
-    this.xSpeed = 5;
+    this.xSpeed = (this.xSpeed > 0)? this.xSpeed + 0.1: this.xSpeed - 0.1;
     this.ySpeed = 5;
   }
 
