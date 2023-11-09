@@ -110,7 +110,7 @@ class Ball {
     this.x = width / 2;
     this.y = height / 2;
     this.radius = 15;
-    this.xSpeed = 5;
+    this.xSpeed = 15;
     this.ySpeed = 5;
   }
 
