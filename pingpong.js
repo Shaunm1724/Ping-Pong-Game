@@ -19,7 +19,7 @@ function draw() {
     textAlign(CENTER);
     text("Game Over", width / 2, height / 2);
     
-    // Optionally, you can reset the scores to 0 or perform other actions as needed.
+    
     leftScore = 0;
     rightScore = 0;
     
@@ -31,8 +31,6 @@ function draw() {
 
   leftPaddle.show();
   rightPaddle.show();
-  //leftPaddle.update();
-  //rightPaddle.update();
 
   ball.update();
   ball.show();
